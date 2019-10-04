@@ -19,9 +19,6 @@
 [submodule "extra/cunn"]
 	path = extra/cunn
 	url = https://github.com/nagadomi/cunn.git
-[submodule "pkg/torch"]
-	path = pkg/torch
-	url = https://github.com/torch/torch7.git
 [submodule "pkg/sundown"]
 	path = pkg/sundown
 	url = https://github.com/torch/sundown-ffi.git
@@ -76,9 +73,6 @@
 [submodule "extra/lua-cjson"]
 	path = extra/lua-cjson
 	url = https://github.com/mpx/lua-cjson
-[submodule "extra/cutorch"]
-	path = extra/cutorch
-	url = http://github.com/nagadomi/cutorch.git
 [submodule "extra/moses"]
 	path = extra/moses
 	url = https://github.com/Yonaba/Moses.git

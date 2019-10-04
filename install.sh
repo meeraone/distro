@@ -111,8 +111,8 @@ setup_lua_env_cmd=$($PREFIX/bin/luarocks path)
 eval "$setup_lua_env_cmd"
 
 echo "Installing common Lua packages"
-cd ${THIS_DIR}/extra/luafilesystem && $PREFIX/bin/luarocks make rockspecs/luafilesystem-1.6.3-1.rockspec || exit 1
-cd ${THIS_DIR}/extra/penlight && $PREFIX/bin/luarocks make penlight-scm-1.rockspec || exit 1
+cd ${THIS_DIR}/extra/luafilesystem && $PREFIX/bin/luarocks make luafilesystem-scm-1.rockspec || exit 1
+cd ${THIS_DIR}/extra/penlight && $PREFIX/bin/luarocks make penlight-scm-2.rockspec || exit 1
 cd ${THIS_DIR}/extra/lua-cjson && $PREFIX/bin/luarocks make lua-cjson-2.1devel-1.rockspec || exit 1
 
 echo "Installing core Torch packages"
@@ -125,7 +125,7 @@ cd ${THIS_DIR}/pkg/dok       && $PREFIX/bin/luarocks make rocks/dok-scm-1.rocksp
 cd ${THIS_DIR}/exe/trepl     && $PREFIX/bin/luarocks make trepl-scm-1.rockspec         || exit 1
 cd ${THIS_DIR}/pkg/sys       && $PREFIX/bin/luarocks make sys-1.1-0.rockspec           || exit 1
 cd ${THIS_DIR}/pkg/xlua      && $PREFIX/bin/luarocks make xlua-1.0-0.rockspec          || exit 1
-cd ${THIS_DIR}/extra/moses   && $PREFIX/bin/luarocks make rockspec/moses-1.6.1-1.rockspec || exit 1
+cd ${THIS_DIR}/extra/moses   && $PREFIX/bin/luarocks make rockspec/moses-2.1.0-1.rockspec || exit 1
 cd ${THIS_DIR}/extra/nn      && $PREFIX/bin/luarocks make rocks/nn-scm-1.rockspec      || exit 1
 cd ${THIS_DIR}/extra/graph   && $PREFIX/bin/luarocks make rocks/graph-scm-1.rockspec   || exit 1
 cd ${THIS_DIR}/extra/nngraph && $PREFIX/bin/luarocks make nngraph-scm-1.rockspec       || exit 1

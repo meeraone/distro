@@ -79,3 +79,9 @@
 [submodule "extra/cudnn"]
 	path = extra/cudnn
 	url = https://github.com/nagadomi/cudnn.torch.git
+[submodule "pkg/torch"]
+	path = pkg/torch
+	url = https://github.com/meeraone/torch7.git
+[submodule "extra/cutorch"]
+	path = extra/cutorch
+	url = https://github.com/meeraone/cutorch.git
